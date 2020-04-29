@@ -1,8 +1,178 @@
 *{
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    padding: 0;
+    margin: 0;
 }
 
 body{
     margin: 0;
     padding: 0;
+}
+
+nav{
+    background-color: rgb(84, 167, 84);
+}
+
+nav > ul{
+    padding: 0;
+    margin:0;
+}
+
+nav > ul > li{
+    display: inline-block;
+    padding: 7px 15px;
+    font-size: 20px;
+}
+
+nav > ul > li > a{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    
+}
+
+nav > ul > li > a:hover{
+    color: rgb(56, 56, 56);
+    text-decoration: none;
+}
+
+.screen-format{
+    min-height:95.4vh;
+    background-color: rgb(179, 179, 179);
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: auto;
+}
+
+.country-card{
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 0 2px;
+    margin: 5px;
+    max-height: 374px;
+}
+
+.country-card > .header{
+    background-color: black;
+    height: 10%;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.country-card > .header > div{
+    width: 2vw;
+    cursor: pointer;
+}
+
+.country-card > .header > div:hover{
+    color: rgb(172, 172, 172);
+}
+
+.country-card > .header > div, .country-card > .header > h3{
+    padding: 5px 10px;
+}
+
+.country-card > .content{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    height: 80%;
+}
+
+.text-align{
+    text-align: right;
+}
+
+.country-card > .content > p{
+    padding: 10px;
+}
+
+.country-card > .footer{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    height: 10%;
+}
+
+.green{
+    color: green;
+}
+
+.red{
+    color:red
+}
+
+.loading{
+    position: fixed;
+    width: 100%;
+    height: calc(100% - 44px);
+    top:44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.search-bar{
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(84, 167, 84);
+    display:flex
+}
+
+.search-bar > *{
+    margin-right:10px;
+}
+
+.search-bar > input{
+    width: 25%;
+    border:none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.search-bar > select{
+    border:none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.search-bar > select > option{
+    border-radius: 5px;
+}
+
+a{
+    color:white;
+    text-decoration: none;
+}
+
+a:hover{
+    color:rgb(161, 161, 161);
+}
+
+.global{
+    min-height:95.4vh;
+    background-color: rgb(179, 179, 179);
+}
+
+.global > h1{
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+.global > h2{
+    background-color: white;
+    border-bottom:solid 1px black;
+    padding: 10px;
 }
